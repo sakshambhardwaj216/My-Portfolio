@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saksham Bhardwaj - Portfolio</title>
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- SweetAlert for popup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.8/sweetalert2.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+    <noscript>
+        <style>
+            body, section, nav li, .hero-content {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+            #particles-js { display: none; }
+            .glow-section, .glow-card { box-shadow: none !important; }
+        </style>
+    </noscript>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <img src="./profile.jpg" alt="Profile Picture" class="profile-pic">
+            <div>
+                <h1 class="special-gothic-expanded-one clickable-name">Saksham Bhardwaj</h1>
+                <p class="delius">CS undergrad | Problem-solver | Building impactful solutions</p>
+                <a href="#featured" class="cta-button glow-cta">See Featured Project</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="featured" class="featured-project glow-section">
+        <h2 class="special-gothic-expanded-one">Featured Work</h2>
+        <div class="project glow-card">
+            <img src="./project1-thumbnail.jpg" alt="Project Screenshot" class="project-thumbnail">
+            <div class="project-details">
+                <h3>E-Commerce Analytics Dashboard</h3>
+                <div class="tech-badges">
+                    <span class="glow-tech">Python</span>
+                    <span class="glow-tech">React</span>
+                    <span class="glow-tech">MongoDB</span>
+                </div>
+                <p>Real-time sales visualization tool with predictive analytics</p>
+                <div class="project-links">
+                    <a href="#" class="code-link glow-link">View Code</a>
+                    <a href="#" class="demo-link glow-link">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="glow-section">
+        <div class="about-content">
+            <h2 class="special-gothic-expanded-one">About Me</h2>
+            <p class="delius">Hi, I'm Saksham - a Computer Science undergraduate passionate about building efficient systems. I specialize in bridging theoretical knowledge with practical implementation.</p>
+            
+            <div class="skills-section">
+                <h3>My Toolkit</h3>
+                <div class="skills-grid">
+                    <div class="skill-category glow-card">
+                        <h4>Languages</h4>
+                        <ul>
+                            <li class="glow-tech">Python</li>
+                            <li class="glow-tech">JavaScript</li>
+                            <li class="glow-tech">Java</li>
+                            <li class="glow-tech">SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category glow-card">
+                        <h4>Technologies</h4>
+                        <ul>
+                            <li class="glow-tech">React</li>
+                            <li class="glow-tech">Node.js</li>
+                            <li class="glow-tech">MongoDB</li>
+                            <li class="glow-tech">Docker</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="glow-section">
+        <h2 class="special-gothic-expanded-one">Projects</h2>
+        <div class="projects-grid">
+            <div class="project glow-card">
+                <img src="./project2-thumbnail.jpg" alt="Project Screenshot" class="project-thumbnail">
+                <h3>Algorithm Visualizer</h3>
+                <div class="tech-badges">
+                    <span class="glow-tech">JavaScript</span>
+                    <span class="glow-tech">D3.js</span>
+                </div>
+                <p>Interactive visualization of sorting algorithms</p>
+                <div class="project-links">
+                    <a href="#" class="code-link glow-link">View Code</a>
+                </div>
+            </div>
+            <div class="project glow-card">
+                <img src="./project3-thumbnail.jpg" alt="Project Screenshot" class="project-thumbnail">
+                <h3>Student Portal</h3>
+                <div class="tech-badges">
+                    <span class="glow-tech">React</span>
+                    <span class="glow-tech">Firebase</span>
+                </div>
+                <p>University resource management system</p>
+                <div class="project-links">
+                    <a href="#" class="code-link glow-link">View Code</a>
+                    <a href="#" class="demo-link glow-link">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="glow-section">
+        <h2 class="special-gothic-expanded-one">Beyond Code</h2>
+        <ul class="achievements-list">
+            <li class="glow-card">🏆 1st Place - HackTheFuture 2024</li>
+            <li class="glow-card">📚 Contributed to OpenSSL documentation</li>
+            <li class="glow-card">👨‍🏫 CS Tutor at University</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="glow-section">
+        <h2 class="special-gothic-expanded-one">Get In Touch</h2>
+        <div class="contact-options">
+            <a href="mailto:sakshambhardwaj216@gmail.com" class="email-button glow-email">Email Me</a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/saksham-bhardwaj-61141727a/" 
+                   class="glow-link" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                   LinkedIn
+                </a>
+                <a href="https://github.com/sakshambhardwaj216" 
+                   class="glow-link" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                   GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <a href="./resume.pdf" target="_blank" class="floating-resume glow-resume">View Resume</a>
+
+    <footer class="glow-section">
+        <p class="delius">&copy; 2025 Saksham Bhardwaj. All rights reserved.</p>
+        <button class="theme-toggle glow-btn">Toggle Dark Mode</button>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.8/sweetalert2.all.min.js"></script>
+    <script src="./script.js"></script>
+
+    <!-- Email Popup Script -->
+    <script>
+        // Name click handler
+        document.querySelector('.clickable-name').addEventListener('click', function() {
+            Swal.fire({
+                title: 'Contact Me',
+                html: `
+                    <div class="email-popup">
+                        <a href="mailto:sakshambhardwaj216@gmail.com" 
+                           class="glow-email" 
+                           style="color: #ff6600; font-size: 1.2rem;">
+                           sakshambhardwaj216@gmail.com
+                        </a>
+                        <button id="copyEmail" class="glow-btn" 
+                                style="margin-top: 15px; padding: 8px 15px;">
+                            Copy Email
+                        </button>
+                    </div>
+                `,
+                showConfirmButton: false,
+                background: '#2a2a2a',
+                color: '#f0f0f0',
+                customClass: {
+                    popup: 'glow-section'
+                }
+            });
+
+            // Copy functionality
+            document.addEventListener('click', function(e) {
+                if(e.target.id === 'copyEmail') {
+                    navigator.clipboard.writeText('sakshambhardwaj216@gmail.com');
+                    Swal.fire({
+                        title: 'Copied!',
+                        text: 'Email address copied to clipboard',
+                        timer: 2000,
+                        background: '#2a2a2a',
+                        color: '#f0f0f0'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

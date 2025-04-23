@@ -1,0 +1,437 @@
+/* ===== BASE STYLES ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Delius', cursive;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+body.light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+* {
+    transition: all 0.3s ease-out;
+}
+
+/* ===== PARTICLES BACKGROUND ===== */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: transparent;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+/* ===== GLOW EFFECTS ===== */
+/* Section Glow */
+.glow-section {
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
+    position: relative;
+}
+.glow-section:hover {
+    box-shadow: 0 0 25px rgba(0, 204, 255, 0.6);
+    transform: translateY(-3px);
+}
+
+/* Card Glow */
+.glow-card {
+    transition: all 0.4s ease;
+    position: relative;
+}
+.glow-card:hover {
+    box-shadow: 0 0 30px rgba(0, 204, 255, 0.7);
+    transform: translateY(-7px) scale(1.02);
+}
+
+/* Email Button Glow */
+.glow-email {
+    transition: all 0.3s ease;
+}
+.glow-email:hover {
+    box-shadow: 0 0 25px rgba(255, 102, 0, 0.8);
+    transform: scale(1.05);
+}
+
+/* Resume Button Glow */
+.glow-resume {
+    transition: all 0.3s ease;
+}
+.glow-resume:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 204, 0.9);
+    transform: scale(1.1);
+}
+
+/* Link Glow */
+.glow-link {
+    transition: all 0.3s ease;
+}
+.glow-link:hover {
+    text-shadow: 0 0 12px rgba(0, 204, 255, 0.8);
+}
+
+/* Tech Badge Glow */
+.glow-tech {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.glow-tech:hover {
+    text-shadow: 0 0 10px rgba(0, 204, 255, 0.7);
+    transform: scale(1.05);
+}
+
+/* CTA Button Glow */
+.glow-cta {
+    transition: all 0.3s ease;
+}
+.glow-cta:hover {
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.7);
+}
+
+/* Theme Toggle Glow */
+.glow-btn {
+    transition: all 0.3s ease;
+}
+.glow-btn:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+/* ===== EMAIL POPUP STYLES ===== */
+.email-popup {
+    text-align: center;
+    padding: 20px;
+}
+
+.swal2-popup.glow-section {
+    box-shadow: 0 0 25px rgba(0, 204, 255, 0.6) !important;
+    border-radius: 10px !important;
+    background: #2a2a2a !important;
+    color: #f0f0f0 !important;
+}
+
+#copyEmail {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    margin-top: 15px;
+    font-family: 'Delius', cursive;
+}
+
+#copyEmail:hover {
+    background-color: #444;
+    box-shadow: 0 0 15px rgba(255, 102, 0, 0.6);
+}
+
+/* ===== TYPOGRAPHY ===== */
+.special-gothic-expanded-one {
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    font-size: 32px;
+    cursor: pointer; /* For clickable name */
+}
+
+.delius {
+    font-family: 'Delius', cursive;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== PROJECT STYLES ===== */
+.project {
+    background-color: #2a2a2a;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+.featured-project {
+    background-color: #252525;
+    border-radius: 15px;
+    margin: 30px auto;
+    padding: 30px;
+}
+
+.project-thumbnail {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.tech-badges {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.tech-badges span {
+    background-color: #333;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.code-link, .demo-link {
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.code-link {
+    background-color: #333;
+    color: #00ccff;
+}
+
+.demo-link {
+    background-color: #00ccff;
+    color: #111;
+}
+
+/* ===== BUTTONS ===== */
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.email-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.theme-toggle {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* ===== NAVIGATION ===== */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00ccff;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #00ccff;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ===== PROFILE IMAGE ===== */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00ccff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease;
+}
+
+.profile-pic:hover {
+    transform: rotate(5deg) scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 204, 255, 0.3);
+}
+
+/* ===== FLOATING RESUME ===== */
+.floating-resume {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00ffcc;
+    color: #111;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+/* ===== ACHIEVEMENTS ===== */
+.achievements-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.achievements-list li {
+    background-color: #252525;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    position: relative;
+    padding-left: 50px;
+}
+
+.achievements-list li::before {
+    content: '→';
+    position: absolute;
+    left: 20px;
+    color: #00ccff;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #111;
+    color: #aaa;
+    margin-top: 50px;
+}
+
+/* ===== LOADING ANIMATION ===== */
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    /* Mobile-optimized glow effects */
+    .glow-section:hover {
+        box-shadow: 0 0 15px rgba(0, 204, 255, 0.6);
+    }
+    .glow-card:hover {
+        transform: translateY(-3px);
+    }
+    
+    .featured-project .project {
+        flex-direction: column;
+    }
+}
+
+/* ===== FALLBACKS ===== */
+.no-js body,
+.body-fallback {
+    opacity: 1 !important;
+}
+
+.no-js section,
+.no-js nav li,
+.no-js .hero-content {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.no-js .glow-section,
+.no-js .glow-card {
+    box-shadow: none !important;
+}
